@@ -1,0 +1,94 @@
+/* fontes */
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+/* Estilo */
+
+/* Cabeçalho */
+body{
+    font-family: "JetBrains Mono", monospace;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #202020;
+    gap: 30px;
+}
+
+h1{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 3em;
+    color: white;
+}
+
+.separador{
+    height: 1px;
+    width: 50%;
+    background-color: white;
+}
+
+nav{
+    width: 100%;
+}
+
+.links{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.links img{
+    width: 75px;
+}
+
+.links p:hover{
+    color: blueviolet;
+}
+
+.links p{
+    padding: 20px 0;
+    font-size: 1.4em;
+    color: white;
+    text-align: center;
+}
+
+main{
+    flex: 1;
+    background-image: url(../img/background/jotaroPurple.png);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 27%;
+}
+
+.exercicios{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.exercicios a{
+    padding: 10px 30px;
+    background-color: #202020;
+    color: white;
+    border-radius: 15px 5px;
+}
+
+.exercicios a:hover{
+    background-color: white;
+    color: #202020;
+}
+/* Rodapé */
+
+footer{
+    height: 100px;
+    background-color: #202020;
+}
