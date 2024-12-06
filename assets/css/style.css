@@ -4,8 +4,8 @@
 
 /* Estilo */
 
-/* Cabeçalho */
-body{
+/* Cabeçalho Index*/
+.bodyIndex{
     font-family: "JetBrains Mono", monospace;
     font-size: 12px;
     display: flex;
@@ -13,7 +13,7 @@ body{
     min-height: 100dvh;
 }
 
-header{
+.headerIndex{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,7 +22,7 @@ header{
     gap: 30px;
 }
 
-h1{
+.titulo h1{
     margin-top: 30px;
     text-align: center;
     font-size: 3em;
@@ -35,7 +35,9 @@ h1{
     background-color: white;
 }
 
-nav{
+/* Menu redes sociais */
+
+.navIndex{
     width: 100%;
 }
 
@@ -59,7 +61,9 @@ nav{
     text-align: center;
 }
 
-main{
+/* Exercícios */
+
+.mainIndex{
     flex: 1;
     background-image: url(../img/background/jotaroPurple.png);
     display: flex;
@@ -80,15 +84,37 @@ main{
     background-color: #202020;
     color: white;
     border-radius: 15px 5px;
+    text-align: center;
+    border: 1px solid white;
+    box-shadow: 1px 5px 10px black;
 }
 
 .exercicios a:hover{
     background-color: white;
     color: #202020;
+    border: 1px solid black;
 }
-/* Rodapé */
 
-footer{
+/* Rodapé Index */
+
+.footerIndex{
     height: 100px;
+    background-color: #202020;
+}
+
+/* CSS Geral para as páginas de exercícios */
+
+.faixaSuperiorPequena{
+    height: 1px;
+    background-color: #202020;
+}
+
+.mainExercicios{
+    flex: 1;
+    background-image: url(../img/background/jotaroPurple.png);
+}
+
+.faixaInferiorPequena{
+    height: 1px;
     background-color: #202020;
 }
