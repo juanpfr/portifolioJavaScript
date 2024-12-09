@@ -4,14 +4,18 @@
 
 /* Estilo */
 
-/* Cabeçalho Index*/
-.bodyIndex{
+body{
     font-family: "JetBrains Mono", monospace;
     font-size: 12px;
+    
+    /* Necessário para o flex 1 funcionar e ocupar o restante da tela */
+    min-height: 100dvh;
     display: flex;
     flex-direction: column;
-    min-height: 100dvh;
 }
+
+/* Cabeçalho Index*/
+
 
 .headerIndex{
     display: flex;
@@ -105,16 +109,44 @@
 /* CSS Geral para as páginas de exercícios */
 
 .faixaSuperiorPequena{
-    height: 1px;
     background-color: #202020;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.faixaSuperiorPequena img{
+    width: 60px;
+}
+
+.faixaSuperiorPequena a{
+    margin: 30px;
 }
 
 .mainExercicios{
     flex: 1;
     background-image: url(../img/background/jotaroPurple.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.faixaInferiorPequena{
+.mainExercicios div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #202020;
+    height: 400px;
+}
+
+.mainExercicios label{
+    color: white;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.footerExercicios{
     height: 1px;
     background-color: #202020;
 }

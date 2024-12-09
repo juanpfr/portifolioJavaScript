@@ -6,16 +6,31 @@
     <title>Jogo da adivinhação</title>
 
     <!-- Reset CSS -->
-    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/reset.css">
 
     <!-- Style CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 
-    <link rel="shortcut icon" href="assets/img/icon/codigo.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/img/icon/codigo.ico" type="image/x-icon">
 </head>
 <body>
-    <header class="faixaSuperiorPequena"></header>
-    <main class="mainExercicios"></main>
-    <footer class="faixaFaixaInferiorPequena"></footer>
+    <header class="faixaSuperiorPequena">
+        <a href="../index.html">
+            <img src="../assets/img/icon/volte.png" alt="Botão de voltar">
+        </a>
+    </header>
+    <main class="mainExercicios">
+        <div>
+            <label for="adivinhar">Tente adivinhar o número que estou pensando de 1 a 10.</label>
+            <br>
+            <input type="text" id="adivinhar" placeholder="Digite aqui o número que desejar">
+            <br>
+            <button onclick="enviarResposta()">Enviar</button>
+            <br>
+        </div>
+    </main>
+    <footer class="footerExercicios"></footer>
+
+    <script src="../assets/js/script.js"></script>
 </body>
 </html>
