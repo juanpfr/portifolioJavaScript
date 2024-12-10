@@ -175,6 +175,12 @@ body{
     color: #202020;
 }
 
+.mainExercicios p{
+    color: white;
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
 .footerExercicios{
     height: 1px;
     background-color: #202020;
