@@ -4,27 +4,17 @@ function enviarResposta(){
     let resposta = Number(document.getElementById("adivinhar").value)
 
     if(resposta === 3){
-        alert("acertou mizeravi")
+        alert("Acertou legal!")
     }else{
-        alert("errou pai")
+        alert("Errou, parceiro!")
     }
+
+    document.getElementById("adivinhar").value = ""
 }
 
-/* function enviarResposta() {
-    let input = document.getElementById("adivinhar");
-    let resposta = Number(input.value);
-
-    if (resposta === 3) {
-        alert("Acertou legal!");
-    } else {
-        alert("Errou, parceiro!");
+document.getElementById("adivinhar").addEventListener("keydown", function(event) {
+    // Verifica se a tecla pressionada é o Enter (código 13)
+    if (event.key === "Enter") {
+        enviarResposta(); // Chama a função quando Enter é pressionado
     }
-
-    // Limpa o campo de entrada
-    input.value = "";
-
-    // Recarrega a página após 1 segundo
-    setTimeout(() => {
-        location.reload();
-    }, 1000);
-} */
+});
